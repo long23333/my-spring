@@ -6,12 +6,14 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="step-02-simple-bean-container" />
         <module name="step-01-simple-bean-container" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="my-spring" target="1.8" />
       <module name="step-01-simple-bean-container" target="1.8" />
+      <module name="step-02-simple-bean-container" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

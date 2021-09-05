@@ -10,6 +10,7 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>step-01-simple-bean-container</module>
+        <module>step-02-simple-bean-container</module>
     </modules>
 
     <properties>
