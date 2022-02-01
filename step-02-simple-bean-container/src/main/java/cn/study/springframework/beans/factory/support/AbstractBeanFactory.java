@@ -7,6 +7,7 @@ import cn.study.springframework.beans.factory.config.BeanDefinition;
 /**
  * 定义了抽象模板类型
  * 后续的类继承抽象类型实现模板方法，提供了统一的接口
+ * 继承了默认单例bean注册的实现类后续继承的类都拥有单例注册和获取实现类的能力
  * */
 
 public abstract class AbstractBeanFactory extends DefaultSingletonBeanRegistry implements BeanFactory {
@@ -18,6 +19,7 @@ public abstract class AbstractBeanFactory extends DefaultSingletonBeanRegistry i
      * */
     @Override
     public Object getBean(String name) {
+        //单例实现中无数据则走其他实现创建bean并返回
         Object bean = getSingleton(name);
         if (bean != null) {
             return bean;
